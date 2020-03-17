@@ -82,7 +82,7 @@ export default {
         width: 450px;
         height: 300px;
         background: #fff;
-        border-radius: 3px;
+        border-radius: 4px;
         position: absolute;
         left: 50%;
         top:50%;
