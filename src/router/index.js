@@ -4,7 +4,6 @@ import Login from '../components/login'
 import  Home from '../components/home'
 import Welcome from '../components/Welcome'
 import Users from '../components/user/Users'
-
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,11 +19,14 @@ const routes = [
     ]
   }
 ]
+//路由导航守卫的设置   通过路由导航守卫来控制访问权限的设定
+
+
 
 const router = new VueRouter({
   routes
 })
-//路由导航守卫的设置   通过路由导航守卫来控制访问权限的设定
+
 router.beforeEach((to,from,next)=>{
   //to 将要访问的路径
   //from 从哪个路径跳转而来
