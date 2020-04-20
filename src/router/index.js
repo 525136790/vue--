@@ -4,6 +4,8 @@ import Login from '../components/login'
 import  Home from '../components/home'
 import Welcome from '../components/Welcome'
 import Users from '../components/user/Users'
+import Rights from '../components/power/Rights'
+import Roles from '../components/power/Roles'
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,7 +17,9 @@ const routes = [
     redirect:'/welcome',//重定向到子级
     children:[
       {path:'/welcome',component:Welcome},
-      {path:'/users',component:Users}
+      {path:'/users',component:Users},
+      {path:'/rights',component:Rights},
+      {path:'/roles',component:Roles},
     ]
   }
 ]
