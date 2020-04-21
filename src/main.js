@@ -2,12 +2,18 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './plugins/element.js'
-//导入全局样式表
 
+//导入全局样式表
 import '../src/assets/css/global.css'
 
 //导入字体图标库
 import './assets/fonts/iconfont.css'
+
+
+//使用treegrid 插件 看官方文档，有试例
+import  TreeTable from "vue-table-with-tree-grid"
+// 注册为全局课用组件  tree-table 为使用时的标签名
+Vue.component('tree-table',TreeTable)
 
 //全局使用axios 数据请求
 import axios from "axios"
