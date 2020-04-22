@@ -79,7 +79,7 @@
                 </el-form-item>
                 <el-form-item label="父级分类">
                     <!--  ele 级联选择器-->
-                    <!-- model指定选中的父级分分类的id 只能是数组 expandTrigger 指定是点击还是移入时打开下级菜单  options 数据源 props 用来指定配置对象 clearable 是否支持清空选项-->
+                    <!-- model指定选中的父级分类的id 只能是数组 expandTrigger 指定是点击还是移入时打开下级菜单  options 数据源 props 用来指定配置对象 clearable 是否支持清空选项-->
                     <el-cascader
                         v-model="selectedKeys"
                         :options="parentCateList"
